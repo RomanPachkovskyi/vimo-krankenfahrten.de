@@ -110,7 +110,7 @@ export interface SiteConfig {
 const config: SiteConfig = {
   "company": {
     "name": "ViMo Krankenfahrten",
-    "logoSrc": "./company-logo.png",
+    "logoSrc": "/company-logo.png",
     "statusBadgeText": "—",
     "legalForm": "",
     "ustNote": "",

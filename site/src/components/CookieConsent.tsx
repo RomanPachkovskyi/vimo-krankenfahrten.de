@@ -236,6 +236,8 @@ export function createConsentRecord(now: Date = new Date()): ConsentRecord {
   };
 }
 
+const CONSENT_MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
+
 export function parseStoredConsent(raw: string | null): ConsentRecord | null {
   if (!raw) return null;
 
@@ -245,11 +247,10 @@ export function parseStoredConsent(raw: string | null): ConsentRecord | null {
     if (parsed.acknowledged !== true) return null;
     if (parsed.version !== CONSENT_VERSION) return null;
 
-    return {
-      version: parsed.version,
-      updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : "",
-      acknowledged: true,
-    };
+    const updatedAt = typeof parsed.updatedAt === "string" ? parsed.updatedAt : "";
+    if (updatedAt && Date.now() - new Date(updatedAt).getTime() > CONSENT_MAX_AGE_MS) return null;
+
+    return { version: parsed.version, updatedAt, acknowledged: true };
   } catch {
     return null;
   }

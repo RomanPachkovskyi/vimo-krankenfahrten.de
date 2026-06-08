@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
+import { CookieConsent } from "@/components/CookieConsent";
 import config from "@/config";
 
 interface LegalLayoutProps {
@@ -49,6 +50,7 @@ const LegalLayout = ({ title, children }: LegalLayoutProps) => (
     </main>
 
     <Footer />
+    <CookieConsent />
   </div>
 );
 
