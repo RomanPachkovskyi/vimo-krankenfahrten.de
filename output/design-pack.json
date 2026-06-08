@@ -1,0 +1,20 @@
+{
+  "middle_block_variant": "checklist",
+  "middle_block_label": "Unsere Leistungen",
+  "color_palette": {
+    "primary": "207 78% 44%",
+    "primaryHover": "207 78% 37%",
+    "primarySoft": "207 80% 93%",
+    "primaryForeground": "0 0% 100%",
+    "primaryHex": "#1882c4",
+    "note": "Fallback medical-trust blue. No logo provided – chosen for healthcare/transport trust signaling. Blue is universally associated with reliability and medical services in German market."
+  },
+  "visual_treatment": {
+    "hero_weight": "bold",
+    "hero_accent": "color",
+    "background_mode": "soft",
+    "accent_intensity": "full"
+  },
+  "selection_reason": "Krankenfahrdienst is a local hands-on service with strong trust requirements. 'bold' heroWeight for directness and confidence (Handwerk/lokale Dienste pattern). 'color' heroAccent for warm brand orientation. 'soft' backgroundMode for warmth and human service feel. 'full' accentIntensity to clearly mark CTA and service elements. 'checklist' middle block for comprehensive service listing – 7+ distinct services need clear enumeration (matching design-rules recommendation for Service-Liste businesses).",
+  "layout_notes": "Status badge HIDDEN (empty string per user instruction). Two phone numbers: landline in contact section, mobile as WhatsApp CTA button. Middle block uses checklist variant to display all 7 service categories clearly."
+}

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+site/node_modules/
+
+# Build outputs
+dist/
+site/dist/
+dist-ssr/
+site/dist-ssr/
+
+# Local/static hosting output
+httpdocs/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.*
+*.local
+
+# OS/editor
+.DS_Store
+.claude/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Generated cache
+.eslintcache
+.vite/

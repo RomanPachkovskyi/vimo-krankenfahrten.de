@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <!-- Warm base gradient (matches --gradient-warm from index.css) -->
+    <linearGradient id="warm" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="hsl(40 20% 98%)" />
+      <stop offset="50%" stop-color="hsl(45 25% 95%)" />
+      <stop offset="100%" stop-color="hsl(40 15% 97%)" />
+    </linearGradient>
+
+    <radialGradient id="depth" cx="20%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="hsl(40 20% 98%)" stop-opacity="0" />
+      <stop offset="50%" stop-color="hsl(40 20% 98%)" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="hsl(40 15% 97%)" stop-opacity="0.7" />
+    </radialGradient>
+
+    <linearGradient id="bottom-fade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="hsl(40 20% 98%)" stop-opacity="1" />
+      <stop offset="100%" stop-color="hsl(40 20% 98%)" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Macro grid (120px) -->
+    <pattern id="macro-grid" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M0 0H120 M0 0V120" fill="none" stroke="hsl(220 15% 80%)" stroke-width="1" />
+    </pattern>
+
+    <!-- Micro grid (30px) -->
+    <pattern id="micro-grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 0H30 M0 0V30" fill="none" stroke="hsl(220 10% 90%)" stroke-width="1" />
+    </pattern>
+
+    <!-- Main structural pattern (mirrors EngineeringBackground.tsx) -->
+    <pattern id="system-grid" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="60" x2="120" y2="60" stroke="currentColor" stroke-width="0.5" opacity="0.08" />
+      <line x1="60" y1="0" x2="60" y2="120" stroke="currentColor" stroke-width="0.5" opacity="0.08" />
+
+      <line x1="0" y1="30" x2="120" y2="30" stroke="currentColor" stroke-width="0.3" opacity="0.04" />
+      <line x1="0" y1="90" x2="120" y2="90" stroke="currentColor" stroke-width="0.3" opacity="0.04" />
+      <line x1="30" y1="0" x2="30" y2="120" stroke="currentColor" stroke-width="0.3" opacity="0.04" />
+      <line x1="90" y1="0" x2="90" y2="120" stroke="currentColor" stroke-width="0.3" opacity="0.04" />
+
+      <circle cx="60" cy="60" r="2" fill="currentColor" opacity="0.12" />
+      <circle cx="60" cy="60" r="4" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.06" />
+
+      <circle cx="0" cy="0" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="120" cy="0" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="0" cy="120" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="120" cy="120" r="1.5" fill="currentColor" opacity="0.08" />
+    </pattern>
+
+    <linearGradient id="flow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0" />
+      <stop offset="30%" stop-color="currentColor" stop-opacity="0.08" />
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.04" />
+    </linearGradient>
+
+    <linearGradient id="accent-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="hsl(42 85% 55%)" stop-opacity="0" />
+      <stop offset="50%" stop-color="hsl(42 85% 55%)" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="hsl(42 85% 55%)" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="600" fill="url(#warm)" />
+
+  <!-- Pattern overlay (inlined for portability) -->
+  <g style="color: hsl(220 25% 12%);">
+    <rect width="1200" height="600" fill="url(#macro-grid)" opacity="0.30" />
+    <rect width="1200" height="600" fill="url(#micro-grid)" opacity="0.15" />
+    <rect width="1200" height="600" fill="url(#system-grid)" />
+
+    <g>
+      <path d="M-50,120 Q100,180 200,200 T400,190" fill="none" stroke="url(#flow-gradient)" stroke-width="1" />
+      <path d="M-30,280 Q150,220 280,230 T450,200" fill="none" stroke="url(#flow-gradient)" stroke-width="0.8" />
+      <path d="M-80,380 Q120,420 250,350 T480,300" fill="none" stroke="url(#flow-gradient)" stroke-width="0.6" />
+
+      <path d="M200,100 Q400,150 600,200 T900,200" fill="none" stroke="url(#flow-gradient)" stroke-width="1.2" />
+      <path d="M180,250 Q420,200 650,210 T950,200" fill="none" stroke="url(#flow-gradient)" stroke-width="1" />
+
+      <path d="M600,180 L1200,180" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.10" />
+      <path d="M650,200 L1200,200" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.12" />
+      <path d="M600,220 L1200,220" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.10" />
+
+      <path d="M400,200 Q550,200 700,200" fill="none" stroke="url(#accent-flow)" stroke-width="2" />
+    </g>
+
+    <g opacity="0.06">
+      <text x="40" y="50" font-size="8" font-family="monospace" fill="currentColor">A-01</text>
+      <text x="40" y="200" font-size="8" font-family="monospace" fill="currentColor">A-02</text>
+      <text x="40" y="350" font-size="8" font-family="monospace" fill="currentColor">A-03</text>
+      <text x="40" y="500" font-size="8" font-family="monospace" fill="currentColor">A-04</text>
+
+      <text x="1140" y="50" font-size="8" font-family="monospace" fill="currentColor" text-anchor="end">B-01</text>
+      <text x="1140" y="200" font-size="8" font-family="monospace" fill="currentColor" text-anchor="end">B-02</text>
+      <text x="1140" y="350" font-size="8" font-family="monospace" fill="currentColor" text-anchor="end">B-03</text>
+    </g>
+
+    <g opacity="0.05">
+      <circle cx="120" cy="120" r="3" fill="none" stroke="currentColor" stroke-width="0.5" />
+      <line x1="117" y1="120" x2="123" y2="120" stroke="currentColor" stroke-width="0.5" />
+      <line x1="120" y1="117" x2="120" y2="123" stroke="currentColor" stroke-width="0.5" />
+
+      <circle cx="240" cy="240" r="3" fill="none" stroke="currentColor" stroke-width="0.5" />
+      <line x1="237" y1="240" x2="243" y2="240" stroke="currentColor" stroke-width="0.5" />
+      <line x1="240" y1="237" x2="240" y2="243" stroke="currentColor" stroke-width="0.5" />
+
+      <circle cx="360" cy="180" r="3" fill="none" stroke="currentColor" stroke-width="0.5" />
+      <line x1="357" y1="180" x2="363" y2="180" stroke="currentColor" stroke-width="0.5" />
+      <line x1="360" y1="177" x2="360" y2="183" stroke="currentColor" stroke-width="0.5" />
+    </g>
+  </g>
+
+  <!-- Depth overlays -->
+  <rect width="1200" height="600" fill="url(#depth)" />
+  <rect x="0" y="468" width="1200" height="132" fill="url(#bottom-fade)" />
+</svg>

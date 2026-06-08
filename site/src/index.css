@@ -1,0 +1,162 @@
+/* Inter — self-hosted, no external requests */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light blue-white base — matches vimo-brand background theme */
+    --background: 210 60% 97%;
+    --foreground: 220 25% 12%;
+
+    /* Card surfaces */
+    --card: 40 15% 97%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 40 15% 97%;
+    --popover-foreground: 220 25% 12%;
+
+    /* Primary - deep charcoal/navy for authority */
+    --primary: 220 25% 15%;
+    --primary-foreground: 40 20% 98%;
+
+    /* Secondary - soft warm gray */
+    --secondary: 40 10% 94%;
+    --secondary-foreground: 220 20% 20%;
+
+    /* Muted tones */
+    --muted: 40 10% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - warm amber/gold, restrained */
+    --accent: 42 85% 55%;
+    --accent-foreground: 220 25% 12%;
+    --accent-soft: 42 95% 92%;
+
+    /* Accent hover state */
+    --accent-hover: 42 80% 48%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 90%;
+    --ring: 42 85% 55%;
+
+    --radius: 0.5rem;
+
+    --shadow-subtle: 0 4px 20px -4px hsl(220 25% 12% / 0.06);
+    --shadow-button: 0 2px 8px -2px hsl(42 85% 55% / 0.3);
+    --bg-accent-glow: hsl(var(--accent) / 0.12);
+
+    /* Background mesh — used by EngineeringBackground.
+       backgroundMode "engineered" uses this full mesh.
+       "soft" and "minimal" override inline. */
+    --bg-mesh:
+      radial-gradient(ellipse at 20% 50%, hsl(40 25% 96%) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, hsl(40 15% 95%) 0%, transparent 40%),
+      hsl(var(--background));
+    --bg-base: hsl(var(--background));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Transformation item hover effect */
+  .transformation-item {
+    @apply relative pl-4 border-l-2 border-transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .transformation-item:hover {
+    border-left-color: hsl(var(--accent) / 0.5);
+  }
+
+  .accent-soft-surface {
+    background-color: hsl(var(--accent-soft));
+  }
+
+  .legal-html h2,
+  .legal-html h3,
+  .legal-html h4 {
+    @apply text-foreground font-semibold tracking-tight;
+  }
+
+  .legal-html h2 {
+    @apply text-xl mt-6 mb-3;
+  }
+
+  .legal-html h3 {
+    @apply text-base mt-5 mb-2;
+  }
+
+  .legal-html h4 {
+    @apply text-sm mt-4 mb-1;
+  }
+
+  .legal-html p {
+    @apply mb-3;
+  }
+
+  .legal-html ul {
+    @apply list-disc pl-5 mb-3 space-y-1;
+  }
+
+}
+
+@layer utilities {
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-button {
+    box-shadow: var(--shadow-button);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .opacity-0 {
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-03-25T12:00:00Z",
+  "project": {
+    "domain": "vimo-krankenfahrten.de",
+    "company_name": "ViMo Krankenfahrten (e.V.)",
+    "company_short_name": "ViMo Krankenfahrten",
+    "activity": "Personenbeförderung sitzend und liegend, Krankenfahrten, Dialyse-/Chemo-/Strahlentherapie-Fahrten, Einweisungs- & Entlassungsfahrten, Verlegungsfahrten",
+    "location": "Essen",
+    "service_region": "Essen und Umgebung (Ruhrgebiet)",
+    "primary_keyword": "Krankenfahrten Essen",
+    "canonical": "https://vimo-krankenfahrten.de/",
+    "services": [
+      "Sitzende Krankenfahrten",
+      "Liegende Beförderung",
+      "Rollstuhlbeförderung",
+      "Dialysefahrten",
+      "Chemo- & Strahlentherapie-Fahrten",
+      "Einweisungs- & Entlassungsfahrten",
+      "Verlegungsfahrten",
+      "Ambulante Fahrten",
+      "Private Fahrten",
+      "Nah- & Fernfahrten"
+    ],
+    "supporting_keywords": [
+      "Krankenfahrdienst Essen",
+      "Personenbeförderung sitzend liegend",
+      "Dialysefahrten Essen",
+      "Krankentransport Essen",
+      "Rollstuhlfahrten Essen",
+      "Krankenbeförderung Ruhrgebiet"
+    ]
+  },
+  "research": {
+    "used_web": true,
+    "low_confidence": false,
+    "errors": [],
+    "notes": "DOCX market analysis (ViMo_Marktanalyse.docx) provided detailed competitor profiles with hero texts, service listings, USPs, and phrase bank. Web validation confirmed 3 strong local competitors.",
+    "selected_competitors": [
+      {
+        "domain": "krankenfahrdienstessen.de",
+        "source": "docx_analysis + web_validation",
+        "score": 95,
+        "title": "Krankenfahrdienst Essen & NRW – BMS | Rollstuhl- & Liegendtransport",
+        "description": "BMS Krankenfahrdienst aus Essen – zuverlässige Beförderung für Patienten in ganz NRW. Rollstuhl-, Liegend- und Krankenfahrten mit Abrechnung über Krankenkasse.",
+        "h1": "BMS Krankenfahrdienst - Ihr verlässlicher Partner für medizinische Beförderung",
+        "matched_services": [
+          "Sitzende Krankenfahrten",
+          "Rollstuhlbeförderung",
+          "Liegende Beförderung",
+          "Dialyse-Serienfahrten",
+          "Krankenhausaufnahmen/-entlassungen",
+          "Reha-Fahrten"
+        ],
+        "matched_locations": ["Essen", "Bochum", "Gelsenkirchen", "Mülheim", "Oberhausen", "Herne"],
+        "company_signals": ["address_essen", "phone_local", "multi_vehicle", "kassen_abrechnung"],
+        "commercial_signals": ["3-step-booking-process", "customer-testimonials", "insurance-billing", "private-excursions"],
+        "negative_signals": [],
+        "confidence_score": 0.95,
+        "decision_reason": "Direct competitor in Essen with identical service portfolio. Strong online presence with clear booking process and customer testimonials. Primary benchmark."
+      },
+      {
+        "domain": "medicomfort-nrw.de",
+        "source": "intake_competitor + web_validation",
+        "score": 90,
+        "title": "MediComfort - Ihr Krankenfahrdienst in Essen",
+        "description": "MediComfort - Ihr Krankenfahrdienst in Essen. Sitzende Krankenfahrten | Liegender Transport | Dialyse- und Rehafahrten. Jetzt Buchen",
+        "h1": "Zuverlässig, sicher, komfortabel – Ihr Krankenfahrdienst in Essen",
+        "matched_services": [
+          "Sitzende Krankenfahrten",
+          "Rollstuhl-Krankenfahrten",
+          "Liegender Transport",
+          "Dialyse- und Rehafahrten",
+          "Tragestuhlfahrten",
+          "Krankenhausfahrten",
+          "Privatfahrten"
+        ],
+        "matched_locations": ["Essen"],
+        "company_signals": ["GmbH", "address_essen_holsterhausen", "phone_local"],
+        "commercial_signals": ["transparent_pricing", "kurzfristige_termine", "begleitperson", "barrierefreie_fahrzeuge"],
+        "negative_signals": [],
+        "confidence_score": 0.90,
+        "decision_reason": "GmbH in Essen with full service overlap. Strong on transparency and comfort messaging. Focuses on private patients and monthly billing."
+      },
+      {
+        "domain": "eli-krankenbefoerderung.de",
+        "source": "intake_competitor + docx_analysis",
+        "score": 75,
+        "title": "Eli Krankenbeförderung – Bochum",
+        "description": "Komfortable und verlässliche Krankenbeförderung von der Haustür bis in die medizinische Einrichtung.",
+        "h1": "Eli Krankenbeförderung",
+        "matched_services": [
+          "Krankenbeförderung",
+          "Rollstuhlfahrten",
+          "Dialysefahrten",
+          "Online-Buchung"
+        ],
+        "matched_locations": ["Bochum", "Ruhrgebiet"],
+        "company_signals": ["10+ years", "online_booking", "clinic_partnerships", "seniorendienst_network"],
+        "commercial_signals": ["keine_vorkasse", "direkte_kassenabrechnung", "gepaeckservice", "begleitperson"],
+        "negative_signals": ["wix_site", "limited_seo_extraction"],
+        "confidence_score": 0.75,
+        "decision_reason": "Established Bochum-based competitor with clinic partnerships and online booking. Part of Seniorendienst network. Moderate local overlap (Bochum, not Essen directly)."
+      },
+      {
+        "domain": "kfd-krankenfahrdienst.nrw",
+        "source": "intake_competitor + web_validation",
+        "score": 65,
+        "title": "KFD Krankenfahrdienst NRW",
+        "description": "KFD Krankenfahrdienst NRW – Ihr zuverlässiger Partner für barrierefreie Krankenfahrten, Rollstuhlfahrten und mehr.",
+        "h1": "KFD Krankenfahrdienst NRW",
+        "matched_services": [
+          "Krankenfahrten",
+          "Rollstuhlfahrten",
+          "Taxi Krankentransport"
+        ],
+        "matched_locations": ["Mönchengladbach"],
+        "company_signals": ["founded_2022", "GmbH", "nrw_focus"],
+        "commercial_signals": ["stadtbezirke_seo_strategy", "versicherungskommunikation"],
+        "negative_signals": ["different_city_moenchengladbach", "not_essen_local"],
+        "confidence_score": 0.65,
+        "decision_reason": "NRW competitor with excellent local SEO strategy (district-level pages). Based in Mönchengladbach - not a direct Essen competitor but relevant for SEO benchmarking."
+      }
+    ]
+  }
+}

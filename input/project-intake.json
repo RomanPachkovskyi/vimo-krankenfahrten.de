@@ -1,0 +1,86 @@
+{
+  "domain": "vimo-krankenfahrten.de",
+  "company_activity": "krankenfahrten",
+  "language": "de",
+  "project_slug": "vimo-krankenfahrten",
+  "company": {
+    "name": "ViMo Krankenfahrten",
+    "short_name": "ViMo Krankenfahrten",
+    "status_badge_text": "Neue Website in Vorbereitung"
+  },
+  "contact": {
+    "phone_display": "+49 201 837 206 72",
+    "phone_mobile": "+49 151 500 96 96 0",
+    "phone_e164": "+4920183720672",
+    "phone_mobile_e164": "+4915150096960",
+    "email": "info@vimo-krankenfahrten.de",
+    "current_website_url": "https://vimo-krankenfahrten.de",
+    "address_line1": "Bückmannshof 34",
+    "postal_city": "45326 Essen",
+    "country": "Deutschland",
+    "response_person": "Dzenis Mulalic"
+  },
+  "seo": {
+    "location": "Essen",
+    "service_region": "Essen und Umgebung",
+    "primary_keyword": "Krankenfahrten Essen",
+    "supporting_keywords": [
+      "Krankenfahrdienst Essen",
+      "Personenbeförderung sitzend liegend",
+      "Dialysefahrten Essen",
+      "Krankentransport Essen",
+      "Rollstuhlfahrten Essen",
+      "Krankenbeförderung Ruhrgebiet"
+    ],
+    "tone": "professional",
+    "competitor_domains": [
+      "medicomfort-nrw.de",
+      "kfd-krankenfahrdienst.nrw",
+      "eli-krankenbefoerderung.de"
+    ]
+  },
+  "legal_extra": {
+    "wirtschafts_id": "DE 460256757",
+    "erlaubnis": "Genehmigung nach §49 PBefG",
+    "aufsichtsbehoerde": "Stadt Essen – Ordnungsamt / Straßenverkehrsamt",
+    "vollstaendiger_name": "ViMo Krankenfahrten (e.V.)",
+    "ladungsfaehige_anschrift": "Bückmannshof 34, 45326 Essen",
+    "vertretungsberechtigter": "Dzenis Mulalic"
+  },
+  "positioning": {
+    "section_marker": "ViMo Krankenfahrten",
+    "headline_before": "",
+    "headline_emphasis": "Ihr Krankenfahrdienst in Essen – sicher, pünktlich und persönlich ans Ziel",
+    "headline_after": "",
+    "subheadline": "Personenbeförderung sitzend & liegend · Dialyse · Chemo · Einweisung & Entlassung – direkte Abrechnung mit Ihrer Krankenkasse.",
+    "services": [
+      "krankenfahrten Beratung",
+      "krankenfahrten Umsetzung"
+    ],
+    "transformation_pairs": [],
+    "highlights": [
+      "krankenfahrten Beratung",
+      "krankenfahrten Umsetzung",
+      "krankenfahrten"
+    ],
+    "page_style": "",
+    "middle_block_variant": "checklist",
+    "middle_block_label": "Unsere Leistungen",
+    "cta": {
+      "enabled": false,
+      "text": "",
+      "url": ""
+    },
+    "visual_treatment": {
+      "hero_weight": "bold",
+      "hero_accent": "color",
+      "background_mode": "soft",
+      "accent_intensity": "full"
+    }
+  },
+  "_user_notes": {
+    "status_badge": "REMOVE from design - do not show status badge",
+    "two_phones": "Landline +49 201 837 206 72 for calls, Mobile +49 151 500 96 96 0 for WhatsApp",
+    "address": "Bückmannshof 34, 45326 Essen - for Impressum/Datenschutz"
+  }
+}

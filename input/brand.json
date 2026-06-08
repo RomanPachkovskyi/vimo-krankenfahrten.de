@@ -1,0 +1,11 @@
+{
+  "project_slug": "vimo-krankenfahrten",
+  "company_name": "ViMo Krankenfahrten",
+  "company_short_name": "ViMo Krankenfahrten",
+  "language": "de",
+  "status_badge_text": "—",
+  "reference_design": {
+    "type": "codex-sam",
+    "source_path": "AUTO_BUNDLED_REFERENCE"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "section_marker": "ViMo Krankenfahrten",
+  "headline_before": "",
+  "headline_emphasis": "Ihr Krankenfahrdienst in Essen – sicher, pünktlich und persönlich ans Ziel",
+  "headline_after": "",
+  "subheadline": "Personenbeförderung sitzend & liegend · Dialyse · Chemo · Einweisung & Entlassung – direkte Abrechnung mit Ihrer Krankenkasse.",
+  "services": [
+    "Sitzende Krankenfahrten",
+    "Liegende Beförderung",
+    "Rollstuhlbeförderung",
+    "Dialyse-, Chemo- & Strahlentherapie",
+    "Einweisungs- & Entlassungsfahrten",
+    "Verlegungsfahrten",
+    "Ambulante & Private Fahrten",
+    "Nah- & Fernfahrten"
+  ],
+  "transformation_pairs": [],
+  "highlights": [
+    "Sitzende Krankenfahrten",
+    "Liegende Beförderung",
+    "Rollstuhlbeförderung",
+    "Dialyse-, Chemo- & Strahlentherapie",
+    "Einweisungs- & Entlassungsfahrten",
+    "Verlegungsfahrten",
+    "Ambulante & Private Fahrten",
+    "Nah- & Fernfahrten"
+  ],
+  "page_style": "",
+  "middle_block_variant": "checklist",
+  "middle_block_label": "Unsere Leistungen",
+  "cta": {
+    "enabled": true,
+    "text": "WhatsApp schreiben",
+    "url": "https://wa.me/4915150096960"
+  },
+  "visual_treatment": {
+    "hero_weight": "bold",
+    "hero_accent": "color",
+    "background_mode": "soft",
+    "accent_intensity": "full"
+  }
+}

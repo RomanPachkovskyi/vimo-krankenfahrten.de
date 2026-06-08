@@ -1,0 +1,9 @@
+{
+  "background": "line-grid-light",
+  "services": {
+    "variant": "cards-list"
+  },
+  "cta": {
+    "style": "default"
+  }
+}

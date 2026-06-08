@@ -1,0 +1,23 @@
+{
+  "project_domain": "vimo-krankenfahrten.de",
+  "status": "READY_WITH_WARNINGS",
+  "current_step": "verification_complete",
+  "completed_steps": [
+    "intake_normalization",
+    "research",
+    "copy_generation",
+    "design_selection",
+    "llms_generation",
+    "artifact_application",
+    "site_generation",
+    "dev_server",
+    "verification"
+  ],
+  "blocked_reasons": [],
+  "warnings": [
+    "Logo is placeholder — replace with real brand logo",
+    "Favicon and OG image are placeholders",
+    "No production build (default, not requested)"
+  ],
+  "updated_at": "2026-03-25T12:30:00Z"
+}
